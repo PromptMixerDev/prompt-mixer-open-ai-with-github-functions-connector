@@ -265,9 +265,12 @@ async function main(
             const functionName = toolCall.function.name;
             const functionToCall = availableFunctions[functionName];
             const functionArgs = JSON.parse(toolCall.function.arguments);
+            if ('token' in functionArgs) {
+              functionArgs.token = gh_token;
+          }
             console.log('Function arguments:', functionArgs);
             const functionResponse = await functionToCall(
-              gh_token,
+              functionArgs.token,
               functionArgs.username,
               functionArgs.repoName,
               functionArgs.pullRequestNumber,
