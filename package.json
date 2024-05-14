@@ -1,6 +1,6 @@
 {
   "name": "prompt-mixer-open-ai-with-github-functions-connector",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This connector includes functions to connect and retrieve information from Github using OpenAI models.",
   "type": "module",
   "main": "main.js",
