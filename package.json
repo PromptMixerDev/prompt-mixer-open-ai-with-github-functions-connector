@@ -19,7 +19,7 @@
   "dependencies": {
     "builtin-modules": "^5.0.0",
     "esbuild": "^0.25.10",
-    "openai": "^6.3.0"
+    "openai": "^6.5.0"
   },
   "devDependencies": {
     "eslint": "^9.38.0",
